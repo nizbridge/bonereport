@@ -6,9 +6,18 @@ var data_filter = {
 }
 // 월간 차트 데이터
 var dataSource = [
-     { "date" : "1월", "전체 risk" : 10, "전체 Issue" : 0, "검색 risk" : 10, "광고 risk" : 7, "_검색_가동률" : 70, "_광고_가동률" : 80, "_전체 가동률" : 90 },
-	{ "date" : "2월", "전체 risk" : 10, "전체 Issue" : 0, "검색 risk": 10, "광고 risk" : 7, "_검색_가동률" : 70, "_광고_가동률" : 80, "_전체 가동률" : 90 },
-	{ "date" : "3월", "전체 risk" : 10, "전체 Issue" : 2, "검색 risk" : 10, "광고 risk" : 7, "_검색_가동률" : 70, "_광고_가동률" : 80, "_전체 가동률" : 90 }
+     { "date" : "1월", "All Risk" : 16, "All Issue" : 2, "Team1 risk" : 10, "Team2 risk" : 6, "_Team1_가동률" : 50, "_Team2_가동률" : 80, "_All_가동률" : 65 },
+	{ "date" : "2월", "All Risk" : 4, "All Issue" : 4, "Team1 risk": 3, "Team2 risk" : 1, "_Team1_가동률" : 98, "_Team2_가동률" : 67, "_All_가동률" : 83 },
+	{ "date" : "3월", "All Risk" : 7, "All Issue" : 4, "Team1 risk" : 5, "Team2 risk" : 2, "_Team1_가동률" : 87, "_Team2_가동률" : 56, "_All_가동률" : 72 },
+	 { "date" : "4월", "All Risk" : 16, "All Issue" : 2, "Team1 risk" : 10, "Team2 risk" : 6, "_Team1_가동률" : 50, "_Team2_가동률" : 80, "_All_가동률" : 65 },
+	{ "date" : "5월", "All Risk" : 4, "All Issue" : 4, "Team1 risk": 3, "Team2 risk" : 1, "_Team1_가동률" : 98, "_Team2_가동률" : 67, "_All_가동률" : 83 },
+	{ "date" : "6월", "All Risk" : 7, "All Issue" : 4, "Team1 risk" : 5, "Team2 risk" : 2, "_Team1_가동률" : 87, "_Team2_가동률" : 56, "_All_가동률" : 72 },
+	 { "date" : "7월", "All Risk" : 16, "All Issue" : 2, "Team1 risk" : 10, "Team2 risk" : 6, "_Team1_가동률" : 50, "_Team2_가동률" : 80, "_All_가동률" : 65 },
+	{ "date" : "8월", "All Risk" : 4, "All Issue" : 4, "Team1 risk": 3, "Team2 risk" : 1, "_Team1_가동률" : 98, "_Team2_가동률" : 67, "_All_가동률" : 83 },
+	{ "date" : "9월", "All Risk" : 7, "All Issue" : 4, "Team1 risk" : 5, "Team2 risk" : 2, "_Team1_가동률" : 87, "_Team2_가동률" : 56, "_All_가동률" : 72 },
+	 { "date" : "10월", "All Risk" : 16, "All Issue" : 2, "Team1 risk" : 10, "Team2 risk" : 6, "_Team1_가동률" : 50, "_Team2_가동률" : 80, "_All_가동률" : 65 },
+	{ "date" : "11월", "All Risk" : 4, "All Issue" : 4, "Team1 risk": 3, "Team2 risk" : 1, "_Team1_가동률" : 98, "_Team2_가동률" : 67, "_All_가동률" : 83 },
+	{ "date" : "12월", "All Risk" : 7, "All Issue" : 4, "Team1 risk" : 5, "Team2 risk" : 2, "_Team1_가동률" : 87, "_Team2_가동률" : 56, "_All_가동률" : 72 }
 ];
 
 // 멤버 차트 데이터
@@ -129,8 +138,8 @@ function isbargraph(value) {
     else false;
 }
 
-var col_target = [ "전체 risk", "전체 Issue", "MUI risk", "검색 risk", "광고 risk" ];
-var col_target_s = [ "전체 risk", "전체 Issue", "MUI risk", "검색 risk", "_광고 risk" ];
+var col_target = [ "All Risk", "All Issue", "MUI risk", "Team1 risk", "Team2 risk" ];
+var col_target_s = [ "All Risk", "All Issue", "MUI risk", "Team1 risk", "_Team2 risk" ];
 
 // JUI 차트
 jui.ready([ "chart.builder" ], function(chart) {
